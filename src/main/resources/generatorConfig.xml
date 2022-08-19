@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE generatorConfiguration
-        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
@@ -12,19 +11,19 @@
     <context id="DB2Table" targetRuntime="MyBatis3Simple">
 
         <!-- 数据库的连接信息 -->
-<!--        <jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
-<!--                        connectionURL="jdbc:mysql://localhost:3306/test"-->
-<!--                        userId="root"-->
-<!--                        password="leon891022"-->
-<!--        >-->
-<!--        </jdbcConnection>-->
-        <jdbcConnection driverClass="${spring.datasource.driver-class-name}"
-                        connectionURL="${spring.datasource.url}"
-                        userId="${spring.datasource.username}"
-                        password="${spring.datasource.password}"
-        ></jdbcConnection>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/test"
+                        userId="root"
+                        password="leon891022"
+        >
+        </jdbcConnection>
+<!--        <jdbcConnection driverClass="${spring.datasource.driver-class-name}"-->
+<!--                        connectionURL="${spring.datasource.url}"-->
+<!--                        userId="${spring.datasource.username}"-->
+<!--                        password="${spring.datasource.password}"-->
+<!--        ></jdbcConnection>-->
         <!-- javabean生成策略 -->
-        <javaModelGenerator targetPackage="com.atguigu.mybatis.pojo  " targetProject=".\src\main\java">
+        <javaModelGenerator targetPackage="com.atguigu.mybatis.pojo" targetProject=".\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
